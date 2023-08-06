@@ -1,0 +1,20 @@
+GET http://localhost:3001/counter
+
+###
+PATCH http://localhost:3001/counter
+Content-Type: application/json
+
+{
+    "newCount": 110
+}
+
+###
+POST  http://localhost:3001/counter/increment
+
+###
+POST http://localhost:3001/counter/incrementByAmmount
+Content-Type: application/json
+
+{
+    "ammount": 15
+}
